@@ -1,7 +1,7 @@
 // Home Content
 
 .nav-top {
-  width: 100rem;
+  width: 100%;
   height: 4rem;
   //margin: auto;
   position: fixed;
@@ -13,7 +13,7 @@
     justify-content: space-around;
 
     a {
-      font: 2rem;
+      font-size: 2rem;
       margin: 20px;
     }
   }
@@ -21,13 +21,18 @@
 
 .header {
   width: 100%;
-  height: 550px;
+  height: 600px;
   background: grey;
   border: 1px solid black;
   margin: 0 auto 5%; //center
   display: flex;
   align-self: center;
   flex: 0 0 auto;
+
+  @media @phone{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
   .image-header {
     width: 100%;
@@ -49,10 +54,6 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url(img/world.jpg);
-    background-size: cover;
-    text-align: center;
-
     h2 {
       color: purple;
       padding: 1rem;
@@ -63,19 +64,31 @@
 
 .body-content {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: yellow;
   border: 1px solid black;
-  margin: 5% auto; //center;
+  margin: 10% auto; //center;
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
 
   #OurVision,
   #Investors {
     width: 50%;
     background: grey;
     padding: 7.5%;
+    display: flex;
+    flex-direction: column;
+
+    @media @phone {
+      width: 100%;
+    }
 
     h3,
     p {
@@ -88,20 +101,26 @@
     background: purple;
     padding: 0px;
 
+    @media @phone {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       height: 100%;
       margin: auto;
+
+     
     }
   }
 }
 
 .body-content-rev {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: yellow;
   border: 1px solid black;
-  margin: 5% auto; //center;
+  margin: 10% auto; //center;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -109,7 +128,8 @@
 
   @media @phone {
     flex-direction: column;
-    margin: auto;
+    align-items: center;
+    width: 95%;
   }
 
   #Success,
@@ -117,6 +137,10 @@
     width: 50%;
     background: grey;
     padding: 7.5%;
+
+    @media @phone {
+      width: 100%;
+    }
 
     h3,
     p {
@@ -127,6 +151,10 @@
     width: 50%;
     background: purple;
 
+    @media @phone {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -136,17 +164,24 @@
 }
 footer {
   width: 90rem;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: white;
 
+  @media @phone{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto; // centers box 
+  }
+
   h2,
   email,
   address,
   phone {
-    font: 20px;
+    font-size: 2rem;
     background: white;
   }
 }
