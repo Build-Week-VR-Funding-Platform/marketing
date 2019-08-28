@@ -1,6 +1,15 @@
 // Home Content
-.container{
-  max-width: 100%;
+
+
+/* Fixed Layout */
+.nav-top{
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+
+.container top{
+  max-width: 800;
   width: 100%;
   margin: 0 auto;
 
@@ -8,12 +17,12 @@
     max-width: 140rem;
     width: 100%;
     height: 4rem;
-    margin:0 auto;
+    margin: 0 auto;
     position: fixed;
     z-index: 1;
     top: 0;
 
-    @media @phone{
+    @media @phone {
       max-width: 50rem;
     }
 
@@ -22,43 +31,37 @@
       justify-content: space-around;
       max-width: 100%;
 
-      @media @phone{
+      @media @phone {
         width: 100%;
-        
       }
 
       a {
         font-size: 2rem;
         margin: 20px;
         text-decoration: none;
+      }
     }
   }
 }
-}
 
-.container{
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
+
 
   .header {
-    max-width: 100%;
     width: 100%;
+    padding: 0 1%;
     height: 600px;
-    background: grey;
-    border: 1px solid black;
     margin: 0 auto; //center
     display: flex;
     align-self: center;
-    flex: 0 0 auto;
+    //flex: 0 0 auto;
 
     @media @phone {
       margin-bottom: 1rem;
       text-align: center;
     }
-
+  
     .image-header {
-      width: 83%;
+      width: 80%;
       height: auto;
       background: red;
       margin: 1% auto;
@@ -70,7 +73,7 @@
       }
     }
     .title-header {
-      width: 17%;
+      width: 20%;
       background: blue;
       display: flex;
       .flex();
@@ -79,131 +82,136 @@
       //align-items: center;
 
       h2 {
+        max-width: 95%;
+        margin: 0 auto;
         color: purple;
         padding: 1rem;
         background: blue;
+        font-size: 2rem;
       }
     }
   }
-}
-.body-content,
-.body-content-a {
-  width: 100%;
-  height: 400px;
-  background: yellow;
-  border: 1px solid black;
-  margin: 10% auto; //center;
-  display: flex;
-  .flex-body();
+  
 
 
-  @media @phone {
-    flex-direction: column;
-    align-items: center;
+  .body-content,
+  .body-content-a {
     width: 95%;
-    padding-top: 10%;
-  }
-
-  #OurVision,
-  #Investors {
-    width: 50%;
-    background: grey;
-    padding: 7.5%; //vertical center
+    height: 400px;
+    background: yellow;
+    border: 1px solid black;
+    margin: 10% auto; //center;
     display: flex;
-    flex-direction: column;
+    .flex-body();
 
     @media @phone {
-      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      padding-top: 10%;
     }
 
-    h3,
-    p {
+    #OurVision,
+    #Investors {
+      width: 50%;
       background: grey;
+      padding: 7.5%; //vertical center
+      display: flex;
+      flex-direction: column;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      h3,
+      p {
+        background: grey;
+      }
+    }
+
+    .image-body {
+      width: 50%;
+      background: purple;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
     }
   }
 
-  .image-body {
-    width: 50%;
-    background: purple;
+  .body-content-rev {
+    width: 95%;
+    height: 400px;
+    background: yellow;
+    border: 1px solid black;
+    margin: 10% auto; //center;
+    display: flex;
+    flex-direction: row-reverse;
+    .flex-body();
 
     @media @phone {
-      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      margin: auto;
+    #Success,
+    #Founders {
+      width: 50%;
+      background: grey;
+      padding: 7.5%; //vertical center
+
+      @media @phone {
+        width: 100%;
+      }
+
+      h3,
+      p {
+        background: grey;
+      }
+    }
+    .image-body {
+      width: 50%;
+      background: purple;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
     }
   }
-}
-
-.body-content-rev {
-  width: 100%;
-  height: 400px;
-  background: yellow;
-  border: 1px solid black;
-  margin: 10% auto; //center;
-  display: flex;
-  flex-direction: row-reverse;
-  .flex-body();
-
-  @media @phone {
-    flex-direction: column;
+  footer {
+    width: 95%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 95%;
-  }
-
-  #Success,
-  #Founders {
-    width: 50%;
-    background: grey;
-    padding: 7.5%; //vertical center
-
-    @media @phone {
-      width: 100%;
-    }
-
-    h3,
-    p {
-      background: grey;
-    }
-  }
-  .image-body {
-    width: 50%;
-    background: purple;
-
-    @media @phone {
-      width: 100%;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-    }
-  }
-}
-footer {
-  width: 90rem;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: white;
-
-  @media @phone {
-    width: 95%;
-    text-align: center;
-    margin: 0 auto; // centers box
-  }
-
-  h2,
-  email,
-  address,
-  phone {
-    font-size: 2rem;
+    flex-direction: column;
     background: white;
+
+    @media @phone {
+      width: 95%;
+      text-align: center;
+      margin: 0 auto; // centers box
+    }
+
+    h2,
+    email,
+    address,
+    phone {
+      font-size: 2rem;
+      background: white;
+    }
   }
-}
+
