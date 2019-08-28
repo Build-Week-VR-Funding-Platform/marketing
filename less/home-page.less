@@ -11,32 +11,40 @@ main {
         //padding-top: 20vh;
         font-size: 1.6rem;
         text-align: center;
-        border: 1px solid /*@font-color*/ purple;
+        border: 1px solid @font-color;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-        h2{
-            font-size: 1.8rem;
-            padding-bottom: 40px;
-        }
+    .spacing {
+        margin: 50px;
+    }
+    h2{
+        font-size: 1.8rem;
+        padding-bottom: 40px;
+    }
         .about {
             flex-direction: column;
             img {
-            //border: 1px solid @font-color;
-            box-shadow: 0 4px 8px 0 @font-color;
-            max-width: 40vh;
-            max-height: 40vh;
-            border-radius: 20%;
-            margin-top: 90px;
+            border: 1px solid @font-color;
+            //box-shadow: 0 4px 8px 0 @font-color;
+            max-width: 70vh;
+            max-height: 70vh;
+            border-radius: 10%;
+            margin-top: 35px;
+            }
+            p {
+                line-height: 1.2;
+                padding: 0 100px;
             }
         }
     div .card {
         /* Add shadows to create the "card" effect */
-        box-shadow: 0 4px 8px 0 @font-color;
+        //box-shadow: 0 4px 8px 0 @font-color;
         //transition: 0.3s;
         width: 20%;
         margin: 110px 50px 50px 50px;
+        border: 1px solid @font-color;
         border-radius: 5px;
         }
         
@@ -51,6 +59,7 @@ main {
         img {
         height: 60vh;
         width: 80vh;
+        border: 1px solid @font-color;
         border-radius: 20%;
         margin: 0 100px 0 0;
         }
@@ -61,8 +70,9 @@ main {
         .founder-img {
         height: 60vh;
         width: 80vh;
+        border: 1px solid @font-color;
         border-radius: 20%;
-        margin: 0 100px 0 0;
+        margin: 0 0 0 0;
         }
     }
 

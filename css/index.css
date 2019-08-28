@@ -204,10 +204,13 @@ main .section-box {
   height: 100vh;
   font-size: 1.6rem;
   text-align: center;
-  border: 1px solid /*@font-color*/ purple;
+  border: 1px solid #FBFCFF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .spacing {
+  margin: 50px;
 }
 main h2 {
   font-size: 1.8rem;
@@ -217,17 +220,21 @@ main .about {
   flex-direction: column;
 }
 main .about img {
-  box-shadow: 0 4px 8px 0 #FBFCFF;
-  max-width: 40vh;
-  max-height: 40vh;
-  border-radius: 20%;
-  margin-top: 90px;
+  border: 1px solid #FBFCFF;
+  max-width: 70vh;
+  max-height: 70vh;
+  border-radius: 10%;
+  margin-top: 35px;
+}
+main .about p {
+  line-height: 1.2;
+  padding: 0 100px;
 }
 main div .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 #FBFCFF;
   width: 20%;
   margin: 110px 50px 50px 50px;
+  border: 1px solid #FBFCFF;
   border-radius: 5px;
 }
 main .success-stories {
@@ -236,6 +243,7 @@ main .success-stories {
 main .investor img {
   height: 60vh;
   width: 80vh;
+  border: 1px solid #FBFCFF;
   border-radius: 20%;
   margin: 0 100px 0 0;
 }
@@ -245,8 +253,9 @@ main .founder {
 main .founder .founder-img {
   height: 60vh;
   width: 80vh;
+  border: 1px solid #FBFCFF;
   border-radius: 20%;
-  margin: 0 100px 0 0;
+  margin: 0 0 0 0;
 }
 main button {
   color: #FBFCFF;
