@@ -9,17 +9,72 @@
   nav {
     display: flex;
     justify-content: space-around;
-
+    background: grey;
     a {
       font-size: 2rem;
-      margin: 20px;
+      margin: 2rem;
+      text-decoration: slateblue;
+      background: grey;
     }
   }
 }
+.container {
 
-.members{
-    display:flex;
-    flex-direction: wrap;
-    justify-content: space-around;
-    align-items: center;
+
+  .members {
+    background-image: url(../img/images/pwall.jpg);
+    background-color: transparent;
+    width: 90rem;
+    align-content: center;
+    margin-top: 20rem;
+
+    .flex();
+    flex-direction: column;
+
+    .title {
+      .flex();
+      flex-direction: column;
+      background-image: url(../img/images/pwall.jpg);
+      padding: 5%;
+
+      h2 {
+        background-image: url(../img/images/pwall.jpg);
+        color: purple;
+      }
+      .pm,
+      .front,
+      .back,
+      .ui {
+        width: 100%;
+        .flex(center, space-around);
+        flex-direction: row;
+        background: grey;
+        margin: 2rem auto;
+
+        @media @phone {
+          width: 95%;
+          flex-direction: column;
+        }
+
+        .associate {
+          background: white;
+          color: blue;
+          margin: 2 rem;
+          padding: 2rem;
+          border: 2px solid silver;
+          width: 100%;
+
+          img {
+            width: 20rem;
+            height: 20rem;
+          }
+
+          h3,
+          a {
+            background: white;
+          }
+        }
+      }
+    }
+  }
 }
