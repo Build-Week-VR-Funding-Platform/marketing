@@ -159,7 +159,7 @@ img {
 nav {
   height: 10vh;
   font-size: 1.9rem;
-  background-color: #40367C;
+  background-color: #011638;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -171,23 +171,93 @@ nav {
 nav a {
   text-decoration: none;
 }
+nav a:hover {
+  background-color: #40367C;
+  color: #FBFCFF;
+}
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #011638;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #FBFCFF;
 }
 main {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-main .image-section img {
+main .splash-img {
   height: 100%;
   width: 100%;
 }
-main .about {
-  height: 50vh;
+main .section-box {
+  height: 100vh;
   font-size: 1.6rem;
   text-align: center;
-  padding: 40px 20px;
+  border: 1px solid /*@font-color*/ purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h2 {
+  font-size: 1.8rem;
+  padding-bottom: 40px;
+}
+main .about {
+  flex-direction: column;
+}
+main .about img {
+  box-shadow: 0 4px 8px 0 #FBFCFF;
+  max-width: 40vh;
+  max-height: 40vh;
+  border-radius: 20%;
+  margin-top: 90px;
+}
+main div .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 #FBFCFF;
+  width: 20%;
+  margin: 110px 50px 50px 50px;
+  border-radius: 5px;
+}
+main .success-stories {
+  flex-direction: column;
+}
+main .investor img {
+  height: 60vh;
+  width: 80vh;
+  border-radius: 20%;
+  margin: 0 100px 0 0;
+}
+main .founder {
+  flex-direction: row-reverse;
+}
+main .founder .founder-img {
+  height: 60vh;
+  width: 80vh;
+  border-radius: 20%;
+  margin: 0 100px 0 0;
+}
+main button {
+  color: #FBFCFF;
+  background-color: #40367C;
+  height: 10vh;
+  font-size: 1.6rem;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 10px;
+}
+main button:hover {
+  background-color: #49C1A7;
+  color: #FBFCFF;
 }

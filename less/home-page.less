@@ -2,15 +2,82 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    .image-section img {
+    .splash-img {
         height: 100%;
         width: 100%;
     }
-    .about {
-        height: 50vh;
+    .section-box {
+        height: 100vh;
+        //padding-top: 20vh;
         font-size: 1.6rem;
         text-align: center;
-        padding: 40px 20px;
+        border: 1px solid /*@font-color*/ purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-}
+        h2{
+            font-size: 1.8rem;
+            padding-bottom: 40px;
+        }
+        .about {
+            flex-direction: column;
+            img {
+            //border: 1px solid @font-color;
+            box-shadow: 0 4px 8px 0 @font-color;
+            max-width: 40vh;
+            max-height: 40vh;
+            border-radius: 20%;
+            margin-top: 90px;
+            }
+        }
+    div .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 @font-color;
+        //transition: 0.3s;
+        width: 20%;
+        margin: 110px 50px 50px 50px;
+        border-radius: 5px;
+        }
+        
+        //   /* On mouse-over, add a deeper shadow */
+        // .card:hover {
+        //     box-shadow: 0 8px 16px 0 @font-color;
+        // }
+    .success-stories {
+        flex-direction: column;
+    }
+    .investor {
+        img {
+        height: 60vh;
+        width: 80vh;
+        border-radius: 20%;
+        margin: 0 100px 0 0;
+        }
+    }
+
+    .founder {
+        flex-direction: row-reverse;
+        .founder-img {
+        height: 60vh;
+        width: 80vh;
+        border-radius: 20%;
+        margin: 0 100px 0 0;
+        }
+    }
+
+    button {
+        .button (@font-color; @main-bg /*50px*/);
+        height: 10vh;
+        font-size: 1.6rem;
+        padding: 10px;
+        margin: 50px;        
+        border-radius: 10px;
+            &:hover {
+                background-color: @button-bg;
+                color: @font-color;
+            }
+        }
+    }
+
 
