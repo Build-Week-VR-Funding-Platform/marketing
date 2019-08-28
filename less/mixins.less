@@ -18,7 +18,8 @@
   align-items: @align;
 }
 
-.spacing {
-  width: 95%;
-  margin: 0 auto;
+.flex-body(@justify: center, @text: center) {
+  display: flex;
+  justify-content: @justify;
+  text-align: @text;
 }

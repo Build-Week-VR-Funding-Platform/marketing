@@ -1,8 +1,4 @@
 /*parametric mix-in*/
-.spacing {
-  width: 95%;
-  margin: 0 auto;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -184,7 +180,7 @@ p {
   height: 600px;
   background: grey;
   border: 1px solid black;
-  margin: 0 auto 5%;
+  margin: 0 auto;
   display: flex;
   align-self: center;
   flex: 0 0 auto;
@@ -199,27 +195,28 @@ p {
   width: 100%;
   height: auto;
   background: red;
-  margin: 0 auto;
+  margin: 1% auto;
 }
 .header .image-header img {
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 1% auto;
 }
 .header .title-header {
   width: 45%;
   background: blue;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .header .title-header h2 {
   color: purple;
   padding: 1rem;
   background: blue;
 }
-.body-content {
+.body-content,
+.body-content-a {
   width: 100%;
   height: 400px;
   background: yellow;
@@ -230,14 +227,18 @@ p {
   text-align: center;
 }
 @media (max-width: 500px) {
-  .body-content {
+  .body-content,
+  .body-content-a {
     flex-direction: column;
     align-items: center;
     width: 95%;
+    padding-top: 10%;
   }
 }
 .body-content #OurVision,
-.body-content #Investors {
+.body-content-a #OurVision,
+.body-content #Investors,
+.body-content-a #Investors {
   width: 50%;
   background: grey;
   padding: 7.5%;
@@ -246,27 +247,35 @@ p {
 }
 @media (max-width: 500px) {
   .body-content #OurVision,
-  .body-content #Investors {
+  .body-content-a #OurVision,
+  .body-content #Investors,
+  .body-content-a #Investors {
     width: 100%;
   }
 }
 .body-content #OurVision h3,
+.body-content-a #OurVision h3,
 .body-content #Investors h3,
+.body-content-a #Investors h3,
 .body-content #OurVision p,
-.body-content #Investors p {
+.body-content-a #OurVision p,
+.body-content #Investors p,
+.body-content-a #Investors p {
   background: grey;
 }
-.body-content .image-body {
+.body-content .image-body,
+.body-content-a .image-body {
   width: 50%;
   background: purple;
-  padding: 0px;
 }
 @media (max-width: 500px) {
-  .body-content .image-body {
+  .body-content .image-body,
+  .body-content-a .image-body {
     width: 100%;
   }
 }
-.body-content .image-body img {
+.body-content .image-body img,
+.body-content-a .image-body img {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -277,8 +286,8 @@ p {
   background: yellow;
   border: 1px solid black;
   margin: 10% auto;
-  display: flex;
   flex-direction: row-reverse;
+  display: flex;
   justify-content: center;
   text-align: center;
 }

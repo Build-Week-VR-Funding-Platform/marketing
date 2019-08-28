@@ -24,12 +24,12 @@
   height: 600px;
   background: grey;
   border: 1px solid black;
-  margin: 0 auto 5%; //center
+  margin: 0 auto; //center
   display: flex;
   align-self: center;
   flex: 0 0 auto;
 
-  @media @phone{
+  @media @phone {
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -38,21 +38,22 @@
     width: 100%;
     height: auto;
     background: red;
-    margin: 0 auto;
+    margin: 1% auto;
 
     img {
       width: 100%;
       height: 100%;
-      margin: auto;
+      margin: 1% auto;
     }
   }
   .title-header {
     width: 45%;
     background: blue;
     display: flex;
+    .flex();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
 
     h2 {
       color: purple;
@@ -62,27 +63,29 @@
   }
 }
 
-.body-content {
+.body-content,
+.body-content-a {
   width: 100%;
   height: 400px;
   background: yellow;
   border: 1px solid black;
   margin: 10% auto; //center;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  .flex-body();
+
 
   @media @phone {
     flex-direction: column;
     align-items: center;
     width: 95%;
+    padding-top: 10%;
   }
 
   #OurVision,
   #Investors {
     width: 50%;
     background: grey;
-    padding: 7.5%;
+    padding: 7.5%; //vertical center
     display: flex;
     flex-direction: column;
 
@@ -99,7 +102,6 @@
   .image-body {
     width: 50%;
     background: purple;
-    padding: 0px;
 
     @media @phone {
       width: 100%;
@@ -109,8 +111,6 @@
       width: 100%;
       height: 100%;
       margin: auto;
-
-     
     }
   }
 }
@@ -123,8 +123,7 @@
   margin: 10% auto; //center;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
-  text-align: center;
+  .flex-body();
 
   @media @phone {
     flex-direction: column;
@@ -136,7 +135,7 @@
   #Founders {
     width: 50%;
     background: grey;
-    padding: 7.5%;
+    padding: 7.5%; //vertical center
 
     @media @phone {
       width: 100%;
@@ -171,10 +170,10 @@ footer {
   flex-direction: column;
   background: white;
 
-  @media @phone{
+  @media @phone {
     width: 95%;
     text-align: center;
-    margin: 0 auto; // centers box 
+    margin: 0 auto; // centers box
   }
 
   h2,
