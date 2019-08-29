@@ -236,33 +236,6 @@ p {
     font-size: 1.5rem;
   }
 }
-footer {
-  width: 100%;
-  height: 70px;
-  background-color: #3D393C;
-  color: #D0CCD0;
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  bottom: 0;
-}
-footer p {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-}
-footer h4 {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-}
-@media (max-width: 500px) {
-  footer h4 {
-    width: 52%;
-  }
-}
-body {
-  background-color: #D0CCD0;
-}
 @media (max-width: 500px) {
   .container {
     width: 100%;
@@ -281,6 +254,12 @@ body {
 @media (max-width: 500px) {
   .jumbotron {
     display: none;
+  }
+}
+@media (min-width: 800px) {
+  .jumbotron {
+    margin-top: 150px;
+    width: 85%;
   }
 }
 .play {
@@ -309,6 +288,12 @@ body {
     margin-top: 100px;
   }
 }
+@media (min-width: 800px) {
+  .play h1 {
+    margin-top: 150px;
+    width: 85%;
+  }
+}
 .introduction {
   width: 90%;
   display: flex;
@@ -329,7 +314,7 @@ body {
 .introText {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-top: 45px;
   padding: 30px;
 }
 @media (max-width: 500px) {
@@ -347,6 +332,11 @@ body {
     font-size: 2rem;
   }
 }
+@media (min-width: 800px) {
+  .introText h2 {
+    font-size: 2rem;
+  }
+}
 .introText p {
   margin-bottom: 20px;
 }
@@ -355,9 +345,14 @@ body {
     font-size: 1.3rem;
   }
 }
+@media (min-width: 800px) {
+  .introText p {
+    font-size: 1.3rem;
+  }
+}
 .bodyContent {
   width: 70%;
-  margin: 50px 150px;
+  margin: 50px 200px;
   display: flex;
   position: relative;
   background-color: white;
@@ -371,6 +366,13 @@ body {
     display: flex;
     margin: 50px;
     justify-content: space-around;
+  }
+}
+@media (min-width: 800px) {
+  .bodyContent {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 100px;
   }
 }
 button {
@@ -395,8 +397,15 @@ button:hover {
     margin-top: 100px;
   }
 }
+@media (min-width: 800px) {
+  button {
+    width: 110px;
+    margin-top: 100px;
+  }
+}
 .indexBody {
   margin-bottom: 150px;
+  margin-left: 120px;
 }
 @media (max-width: 500px) {
   .indexBody {
@@ -654,4 +663,28 @@ p {
   color: #424242;
   cursor: pointer;
   height: auto;
+}
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #3D393C;
+  color: #D0CCD0;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+footer h4 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  footer h4 {
+    width: 52%;
+  }
 }
