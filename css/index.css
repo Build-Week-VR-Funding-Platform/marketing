@@ -228,59 +228,12 @@ p {
 }
 .header .title-header h2 {
   max-width: 95%;
-  margin-left: 100rem;
+  margin-right: 65%;
   color: purple;
   padding: 1rem;
   background: transparent;
   font-size: 4rem;
 }
-/*
-.header {
-  width: 100%;
-  padding: 0 1%;
-  height: 600px;
-  margin: 0 auto; //center
-  display: flex;
-  align-self: center;
-  //flex: 0 0 auto;
-
-  @media @phone {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .image-header {
-    width: 80%;
-    height: auto;
-    background: red;
-    margin: 1% auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-      margin: 1% auto;
-    }
-  }
-  .title-header {
-    width: 20%;
-    background: blue;
-    display: flex;
-    .flex();
-    flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-
-    h2 {
-      max-width: 95%;
-      margin: 0 auto;
-      color: purple;
-      padding: 1rem;
-      background: blue;
-      font-size: 2rem;
-    }
-  }
-}
-*/
 .body-content,
 .body-content-a {
   width: 95%;
