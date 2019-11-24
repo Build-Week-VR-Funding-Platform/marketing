@@ -1,0 +1,223 @@
+// Home Content
+
+/* Fixed Layout 
+.nav-top {
+  width: 100%; //from 98
+  margin: 0 auto;
+  padding: 0;  //0  1%
+ 
+  @media @phone{
+      max-width: 100%;
+      padding: 0;
+  }
+} 
+.top {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+*/
+.nav-top {
+  max-width: 100%; //140rem
+  width: 100%;
+  padding: 0;
+  height: 4rem;
+  margin: 0 auto;
+  position: fixed; //fix nav bar
+  z-index: 1;
+  top: 0;
+  display: flex;
+  align-items: center; // vertical centers
+  justify-content: space-around;
+  background: grey;
+
+  @media @phone {
+    max-width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+    background: grey;
+
+    @media @phone {
+      width: 50%;
+      text-align: center; // centers text
+    }
+  }
+}
+
+//}
+
+.header {
+  margin: 0%;
+  padding: 0%;
+  height: 60rem;
+
+  .title-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/images/giu-vicente-FMArg2k3qOU-unsplash.jpg)
+      no-repeat center center fixed;
+    background-size: cover; // img will show perfectly on screen
+    background-attachment: fixed; //keeps background image inplace
+    height: 90vh;
+
+    h2 {
+      max-width: 95%;
+      margin-right: 65%; // align text postion
+      color: purple;
+      padding: 1rem;
+      background: transparent;
+      font-size: 4rem;
+    }
+
+    .full-title{
+      display: block;
+      max-width: 95%;
+      margin-right: 65%; // align text postion
+      padding: 1rem;
+      background: transparent;
+      font-size: 8rem;
+      font-family: 'Mukta', sans-serif;
+      
+
+      @media @phone {
+        display: none;
+      }
+    }
+    .mob-title {
+      display: none;
+      font-family: 'Mukta', sans-serif;
+
+      @media @phone {
+        display: block;
+      }
+    }
+  }
+}
+
+.body-content,
+.body-content-a {
+  width: 95%;
+  height: 400px;
+  background: yellow;
+  border: 1px solid black;
+  margin: 10% auto; //center;
+  display: flex;
+  .flex-body();
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding-top: 10%;
+  }
+
+  #OurVision,
+  #Investors {
+    width: 50%;
+    background: grey;
+    padding: 7.5%; //vertical center
+    display: flex;
+    flex-direction: column;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    h3,
+    p {
+      background: grey;
+    }
+  }
+
+  .image-body {
+    width: 50%;
+    background: purple;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+  }
+}
+
+.body-content-rev {
+  width: 95%;
+  height: 400px;
+  background: yellow;
+  border: 1px solid black;
+  margin: 10% auto; //center;
+  display: flex;
+  flex-direction: row-reverse;
+  .flex-body();
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  #Success,
+  #Founders {
+    width: 50%;
+    background: grey;
+    padding: 7.5%; //vertical center
+
+    @media @phone {
+      width: 100%;
+    }
+
+    h3,
+    p {
+      background: grey;
+    }
+  }
+  .image-body {
+    width: 50%;
+    background: purple;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+  }
+}
+footer {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+
+  @media @phone {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto; // centers box
+  }
+
+  h2,
+  email,
+  address,
+  phone {
+    font-size: 2rem;
+    background: white;
+  }
+}

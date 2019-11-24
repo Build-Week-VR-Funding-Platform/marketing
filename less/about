@@ -1,0 +1,88 @@
+.nav-top {
+  .nav-top{
+    width: 100%;  
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  width: 100%;
+  height: 4rem;
+  //margin: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: grey;
+    a {
+      font-size: 2rem;
+      margin: 2rem;
+      text-decoration: slateblue;
+      background: grey;
+    }
+  }
+}
+
+
+  .members {
+    background-image: url(../img/images/pwall.jpg);
+    background-color: transparent;
+    width: 90%;
+    //align-content: center;
+    margin: 20rem auto;
+    padding: 0 1%;
+  
+
+    .flex();
+    flex-direction: column;
+
+    .title {
+      .flex();
+      flex-direction: column;
+      background-image: url(../img/images/pwall.jpg);
+      padding: 5%;
+
+      h2 {
+        background-image: url(../img/images/pwall.jpg);
+        color: purple;
+      }
+      .pm,
+      .front,
+      .back,
+      .ui {
+        width: 100%;
+        .flex(center, space-around);
+        flex-direction: row;
+        background: grey;
+        margin: 2rem auto;
+
+        @media @phone {
+          width: 95%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .associate {
+          background: white;
+          color: blue;
+          margin: 2%;
+          padding: 2%;
+          border: 2px solid silver;
+         
+
+          img {
+            width: 20rem;
+            height: 20rem;
+          }
+
+          h3,
+          a {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+
